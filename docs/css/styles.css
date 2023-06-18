@@ -1,0 +1,337 @@
+/* En este archivo escriban su CSS */
+:root {
+  --primario: #05a2b1;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --cursor: rgba(5, 162, 177, 0.6);
+}
+
+/* Fonts */
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+/* Reset */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+  list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 3px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--negro);
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
+
+/* Seccion Principal*/
+main {
+  z-index: 5;
+}
+.video-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    height: 100%;
+  }
+  .video {
+    object-fit: fill;
+  }
+}
+@media (max-width: 480px) {
+  .video-container {
+    width: 100%;
+    height: 100%;
+  }
+  .video {
+    height: 100vh;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(00, 00, 00, 0.6);
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.seccion {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ocultar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .seccion {
+    top: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .seccion {
+    flex-direction: column;
+  }
+}
+
+.imagen-perfil {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 2px 2px rgba(54, 175, 189, 0.75);
+}
+@media (max-width: 480px) {
+  .imagen-div {
+    display: none;
+  }
+}
+
+.texto-principal {
+  text-align: center;
+  width: 40%;
+  padding: 30px;
+  color: var(--blanco);
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+}
+
+.texto-principal h1 {
+  margin: 5px;
+}
+
+.boton {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: var(--primario);
+  color: var(--blanco);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px -1px 11px 8px rgba(0, 0, 0, 0.8) inset;
+}
+
+.boton:hover {
+  font-weight: 700;
+  border: 1px solid var(--negro);
+}
+
+.contenido-principal {
+  width: 100%;
+  margin-top: 5rem;
+}
+.hero-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url("../img/imagenF1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .texto-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    margin-left: 0;
+  }
+  .texto-principal p {
+    margin: 5px;
+  }
+
+  .imagen-div {
+    padding: 10px;
+  }
+}
+
+.hablemos {
+  background-color: rgb(6, 16, 17, 0.6);
+  width: 100%;
+  border-radius: 20px;
+}
+.hablemos h2 {
+  margin-bottom: 40px;
+}
+
+.boton-enlace {
+  margin: 0 auto;
+  margin-bottom: 3px;
+  background: var(--blanco);
+  box-shadow: 0px -1px 11px 8px rgba(0, 0, 0, 0.8) inset;
+  border-radius: 15%;
+  padding: 3px;
+  display: block;
+  width: 40px;
+  height: auto;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+.boton-enlace:hover {
+  opacity: 0.8;
+  border: 1px solid var(--primario);
+}
+@media (max-width: 480px) {
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  color: var(--blanco);
+  background: rgb(6, 16, 17);
+  background: linear-gradient(
+    0deg,
+    rgba(6, 16, 17, 1) 86%,
+    rgba(6, 98, 107, 1) 100%
+  );
+  padding-top: 30px;
+}
+
+/*prueba de cursor*/
+
+.comet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.trail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: var(--negro);
+  opacity: 0.5;
+  transform-origin: center;
+  animation: cometTrail 1s infinite;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-shadow: 5px 5px 20px 10px var(--cursor);
+}
+
+@keyframes cometTrail {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+}
+
+.trail:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.trail:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.trail:nth-child(3) {
+  animation-delay: 0.4s;
+}
