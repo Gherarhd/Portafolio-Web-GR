@@ -25,6 +25,7 @@ const mediaQuery = window.matchMedia("(max-width: 480px)");
 abrir.addEventListener("click", () => {
   nav.classList.add("nav-visible");
   abrir.classList.add("ocultar");
+
   if (mediaQuery.matches) {
     seccion.classList.add("ocultar");
   }
