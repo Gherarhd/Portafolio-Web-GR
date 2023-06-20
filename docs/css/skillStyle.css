@@ -1,0 +1,58 @@
+.progressbar {
+  width: 60%;
+  background: black;
+  box-shadow: 0px -1px 10px 3px rgba(31, 204, 204, 0.8);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.progressbar:hover {
+  width: 65%;
+}
+.ui-progressbar-value {
+  background: aqua;
+  box-shadow: 0px -1px 10px 5px rgba(0, 0, 0, 0.8) inset;
+  border: none;
+}
+
+.logo-skill {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.caja-skill {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.imagen-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding: 0;
+}
+.imagen-skill img {
+  display: block;
+  width: 50px;
+}
+.imagen-skill p {
+  margin: 0;
+  text-align: center;
+}

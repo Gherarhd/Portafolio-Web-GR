@@ -148,6 +148,9 @@
   width: 100%;
   margin-bottom: 50px;
 }
+.encabezado h1 {
+  text-align: center;
+}
 .encabezado img {
   min-width: 120px;
 }

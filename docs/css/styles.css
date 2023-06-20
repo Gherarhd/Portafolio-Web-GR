@@ -186,6 +186,11 @@ main {
   border: none;
   cursor: pointer;
   box-shadow: 0px -1px 11px 8px rgba(0, 0, 0, 0.8) inset;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 .boton:hover {
@@ -255,6 +260,11 @@ main {
   -moz-border-radius: 15%;
   -ms-border-radius: 15%;
   -o-border-radius: 15%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 .boton-enlace:hover {
   opacity: 0.8;
