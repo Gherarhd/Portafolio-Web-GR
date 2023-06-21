@@ -23,58 +23,81 @@ cerrar.addEventListener("click", () => {
   // seccion.classList.remove("ocultar");
 });
 
-$(function () {
-  $("#progressbar").progressbar({
-    value: 95,
+// const link = document.querySelector("#linkProyecto");
+
+// link.addEventListener("click", () => {
+//   click();
+// });
+
+// function click() {
+//   console.log("funciona");
+// }
+///Jquery----------------
+$(document).ready(function () {
+  $(function () {
+    $("#progressbar").progressbar({
+      value: 95,
+    });
   });
-});
-$(function () {
-  $("#progressbar2").progressbar({
-    value: 90,
+  $(function () {
+    $("#progressbar2").progressbar({
+      value: 90,
+    });
   });
-});
-$(function () {
-  $("#progressbar3").progressbar({
-    value: 70,
+  $(function () {
+    $("#progressbar3").progressbar({
+      value: 70,
+    });
   });
-});
-$(function () {
-  $("#progressbar4").progressbar({
-    value: 80,
+  $(function () {
+    $("#progressbar4").progressbar({
+      value: 80,
+    });
   });
-});
-$(function () {
-  $("#progressbar5").progressbar({
-    value: 70,
+  $(function () {
+    $("#progressbar5").progressbar({
+      value: 70,
+    });
   });
-});
-$(function () {
-  $("#progressbar6").progressbar({
-    value: 78,
+  $(function () {
+    $("#progressbar6").progressbar({
+      value: 78,
+    });
   });
-});
-$(function () {
-  $("#progressbar7").progressbar({
-    value: 76,
+  $(function () {
+    $("#progressbar7").progressbar({
+      value: 76,
+    });
   });
-});
-$(function () {
-  $("#progressbar8").progressbar({
-    value: 59,
+  $(function () {
+    $("#progressbar8").progressbar({
+      value: 59,
+    });
   });
-});
-$(function () {
-  $("#progressbar9").progressbar({
-    value: 82,
+  $(function () {
+    $("#progressbar9").progressbar({
+      value: 82,
+    });
   });
-});
-$(function () {
-  $("#progressbar10").progressbar({
-    value: 91,
+  $(function () {
+    $("#progressbar10").progressbar({
+      value: 91,
+    });
   });
-});
-$(function () {
-  $("#progressbar11").progressbar({
-    value: 87,
+  $(function () {
+    $("#progressbar11").progressbar({
+      value: 87,
+    });
+  });
+
+  //slider---------------
+
+  /*----Slider---- */
+
+  $(".galeria").bxSlider({
+    mode: "fade",
+    captions: true,
+    slideWidth: 1000,
+    responsive: true,
   });
 });
