@@ -103,8 +103,12 @@
 }
 
 .contenedor-lista {
-  padding: 10px;
+  padding: 10px 0;
 }
+.contenedor-lista li {
+  margin-bottom: 10px;
+}
+
 .boton-lista {
   background-color: var(--primario);
   color: var(--blanco);
