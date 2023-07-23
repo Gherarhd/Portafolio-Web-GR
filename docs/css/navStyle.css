@@ -57,12 +57,14 @@ header {
 }
 .nav-list {
   text-align: center;
-
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin: 10px;
+  align-items: center;
+  margin: 15px;
   box-shadow: 0px -1px 11px 8px rgba(0, 0, 0, 0.3) inset;
+}
+.nav-list li {
+  margin-bottom: 20px;
 }
 
 .nav .botones-a:hover {
@@ -83,7 +85,7 @@ header {
 @media screen and (max-width: 765px) {
   .abrir-menu,
   .cerrar-menu {
-    margin-top: 10px;
+    margin-top: 15px;
     display: block;
     cursor: pointer;
     font-size: 1.5rem;

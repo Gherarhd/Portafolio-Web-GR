@@ -169,6 +169,9 @@ main {
 .texto-principal h1 {
   margin: 5px;
 }
+.center {
+  text-align: center;
+}
 
 .boton {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -229,7 +232,6 @@ main {
     width: 100%;
     margin: 10px;
     padding: 5px;
-    margin-left: 0;
   }
   .texto-principal p {
     margin: 5px;
