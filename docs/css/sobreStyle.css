@@ -144,13 +144,56 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   width: 100%;
   margin-bottom: 50px;
 }
 .encabezado h1 {
+  width: 50%;
   text-align: center;
 }
 .encabezado img {
   min-width: 120px;
+}
+
+.invitacion {
+  margin: 50px;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+  }
+  .encabezado h1 {
+    width: 100%;
+  }
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+}
+
+.animated-image {
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  animation: slideIn 3s forwards;
+  -webkit-animation: slideIn 3s forwards;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@keyframes slideIn {
+  to {
+    right: 0;
+  }
 }
