@@ -26,6 +26,7 @@
   box-shadow: 0px -1px 11px 8px rgba(0, 0, 0, 0.3) inset;
 }
 
+
 .nav .botones-a:hover {
   background: rgba(54, 175, 189, 0.4);
   color: var(--blanco);

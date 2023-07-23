@@ -377,3 +377,10 @@ main {
 .trail:nth-child(3) {
   animation-delay: 0.4s;
 }
+
+nav .botones-a {
+  margin-right: 20px;
+}
+.nav-list li {
+  margin-bottom: 20px;
+}
