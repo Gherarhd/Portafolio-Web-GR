@@ -169,6 +169,7 @@ main {
 .texto-principal h1 {
   margin: 5px;
 }
+
 .center {
   text-align: center;
 }
@@ -208,6 +209,7 @@ main {
   --cian: #00ffff;
   font-size: 18px;
   padding: 0.8em 3em;
+  margin-top: 20px;
   letter-spacing: 0.08em;
   position: relative;
   font-family: inherit;
@@ -519,6 +521,15 @@ main {
 .card:hover .card-button {
   transform: translate(-50%, 50%);
   opacity: 1;
+}
+@media (max-width: 600px) {
+  .complemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 .footer {
