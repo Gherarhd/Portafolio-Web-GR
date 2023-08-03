@@ -31,8 +31,9 @@
   <body>
     <div id="video-container" class="video-container">
       <header>
-        <div class="logo">
-          <img src="img/1.png" alt="logo" />
+        <div id="logo" class="logo">
+          
+          <!-- logo ubicación animation.js -->
         </div>
         <button class="abrir-menu" id="abrir">
           <i class="bi bi-list"></i> Menu
@@ -45,48 +46,14 @@
                 <i class="bi bi-x-square"></i>
               </button>
             </li>
-            <li><a class="botones-a" href="sobre.html">Sobre Mi</a></li>
-            <li><a class="botones-a" href="skill.html">Skills</a></li>
-            <li><a class="botones-a" href="proyectos.html">Proyectos</a></li>
+          <li> <button class="btn" onclick="redirectTo('sobre.html')"> <span> Sobre Mi </span></button></li> 
+
+          <!-- <a class="botones-a" href="sobre.html">Sobre Mi</a> -->
+            <li><button class="btn" onclick="redirectTo('skill.html')"> <span> Lenguajes </span></button></li>
+            <li><button class="btn" onclick="redirectTo('proyectos.html')"> <span> Proyectos </span></button></li>
           </ul>
 
-          <div class="complemento-nav">
-            <a
-              href="https://github.com/Gherarhd"
-              target="_blank"
-              class="enlace-nav"
-              ><img
-                class="boton-enlace"
-                src="img/github.png"
-                alt="imagen-github"
-              />
-              <span>GitHub</span></a
-            >
-            <a
-              href="http://www.linkedin.com/in/gherarhdravelo"
-              target="_blank"
-              class="enlace-nav"
-            >
-              <img
-                class="boton-enlace"
-                src="img/linkedin.png"
-                alt="imagen-link"
-              />
-              <span>Linkedin</span>
-            </a>
-
-            <a
-              href="mailto:ravelogherarhd@gmail.com"
-              target="_blank"
-              class="enlace-nav"
-              ><img
-                class="boton-enlace"
-                src="img/mail.png"
-                alt="imagen-email"
-              />
-              <span>Contacto</span>
-            </a>
-          </div>
+         
         </nav>
       </header>
 
@@ -103,13 +70,15 @@
             <h1>Hola! Soy Gherarhd</h1>
             <p class="center" >
               Programador front-end con experiencia en la creación de sitios web
-              y aplicaciones interactivas para diversos clientes.
+              y aplicaciones interactivas.
             </p>
             <a href="Cv/Gherarhd-Web-Developer.pdf" target="_blank">
               <button class="boton" type="button">Mi Cv</button>
             </a>
           </div>
               <div class="imagen-div">
+
+                
             <img
               id="inicio"
               class="imagen-perfil border"
@@ -131,16 +100,43 @@
             <div class="texto-principal hablemos">
               <h2>Hablemos!</h2>
               <p>
-                Con mi experiencia en HTML, CSS y JavaScript, puedo ayudar a
-                construir una presencia en línea efectiva que sea fácil de usar
-                y que brinde una experiencia de usuario atractiva. Si está
-                buscando un sitio web de alta calidad y personalizado, ¡estoy
-                aquí para ayudarlo! Contácteme para discutir su proyecto y cómo
-                puedo ayudar a llevarlo al siguiente nivel.
+             "Tecnología y Creatividad en sinergia: soy un apasionado del desarrollo web. Mi objetivo es utilizar mi habilidad para construir presencias en línea impactantes, proporcionando experiencias de usuario cautivadoras. Si buscas un desarrollador proactivo, centrado en la calidad y la personalización, ¡estoy preparado para ser parte de tu equipo! Mi deseo es afrontar nuevos retos y contribuir a proyectos innovadores. ¡Conversemos y descubramos cómo puedo enriquecer su equipo y llevarlo a nuevas alturas!"
               </p>
             </div>
           </div>
         </article>
+
+<article class="contactos">
+
+ <div class="complemento">
+
+
+  <div class="card">
+  <div class="card-details">
+    <p class="text-title"> <img class="img-card" src="./img/linkGR.png" alt="link">Linkedin</p>
+    <p class="text-body"> Descubre mi pasión por la tecnología </p>
+  </div>
+  <button  class="card-button" onclick="redirectToLinkedIn()" >Contáctame</button>
+</div>
+ <div class="card">
+  <div class="card-details">
+    <p class="text-title"> <img class="img-card" src="./img/github-octocat-svgrepo-com.svg" alt="link">GitHub</p>
+    <p class="text-body">Construyendo el futuro con código</p>
+  </div>
+  <button class="card-button" onclick="redirectToGithub()">Repositorios</button>
+</div>
+ <div class="card">
+  <div class="card-details">
+    <p class="text-title" > <img class="img-card" src="./img/discord-svgrepo-com.svg">Discord</p>
+    <p class="text-body">Únete a la comunidad tecnológica más emocionante: Gherarhd#2044</p>
+  </div>
+  <button class="card-button" onclick="redirectToDiscord()" >Descubre</button>
+</div>
+           
+          </div>
+
+</article>
+
       </main>
     </div>
     <footer class="footer" id="contacto">
@@ -169,5 +165,6 @@
       <p>&copy; 2023 - Todos los derechos reservados</p>
     </footer>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/animation.js" ></script>
   </body>
 </html>

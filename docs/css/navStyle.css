@@ -92,6 +92,7 @@ header {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
+    z-index: 10;
   }
 
   .nav {
@@ -126,12 +127,7 @@ header {
 .ocultar {
   display: none;
 }
-.complemento-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 25px;
-}
+
 .enlace-nav {
   font-size: 15px;
 }
