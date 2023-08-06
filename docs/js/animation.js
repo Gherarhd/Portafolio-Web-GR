@@ -23,6 +23,13 @@ function redirectToDiscord() {
   window.open("https://discord.gg/WZVaBjf6", "_blank");
 }
 
+function redirectToIg() {
+  window.open(
+    "https://instagram.com/ravel_tech?igshid=MzNlNGNkZWQ4Mg==",
+    "_blank"
+  );
+}
+
 function mostrarLogo() {
   const divLogo = document.querySelector("#logo");
   const contenedorLogo = document.createElement("div");
