@@ -174,37 +174,6 @@ main {
   text-align: center;
 }
 
-/* .boton {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: 400;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  display: block;
-  margin: 0 auto;
-  width: 150px;
-  height: 50px;
-  font-size: 18px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  background: var(--primario);
-  color: var(--blanco);
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px -1px 11px 8px rgba(0, 0, 0, 0.8) inset;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-
-.boton:hover {
-  font-weight: 700;
-  border: 1px solid var(--negro);
-} */
-
 .boton {
   --cian: #00ffff;
   font-size: 18px;
@@ -626,7 +595,8 @@ main {
 }
 
 nav .botones-a {
-  margin-right: 20px;
+  margin: 0 auto;
+  padding: 5px;
 }
 .nav-list li {
   margin-bottom: 20px;

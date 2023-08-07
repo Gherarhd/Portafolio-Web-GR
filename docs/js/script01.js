@@ -89,6 +89,16 @@ $(document).ready(function () {
       value: 87,
     });
   });
+  $(function () {
+    $("#progressbar12").progressbar({
+      value: 40,
+    });
+  });
+  $(function () {
+    $("#progressbar13").progressbar({
+      value: 40,
+    });
+  });
 
   //slider---------------
 
