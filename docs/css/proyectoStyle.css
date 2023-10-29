@@ -6,11 +6,13 @@
 }
 
 .contenedor-slider {
-  width: 100%;
+  
+
+  width: 70%;
   height: auto;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 2rem;
   border: 1px solid rgb(61, 60, 60);
   box-shadow: 0px -1px 11px 8px rgba(35, 35, 35, 0.8) inset;
   text-align: center;
@@ -21,6 +23,8 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
+
 .imagen-titulo {
   display: block;
   width: 100%;
@@ -35,7 +39,7 @@
 .imagen-proyecto {
   display: block;
   width: 100%;
-  height: auto;
+ 
   max-height: 300px;
   min-height: 270px;
   border-radius: 50px;
@@ -45,9 +49,15 @@
   -o-border-radius: 50px;
 }
 
-.bx-viewport {
-  height: 22rem !important;
+.bx-viewport { min-width: 100%;
+
+  height: 25rem !important;
+  
+ 
 }
+
+
+
 .bx-controls-direction {
   display: flex;
   justify-content: space-around;
